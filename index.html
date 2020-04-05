@@ -44,12 +44,10 @@ auditing features built into the npm client, a zero-friction way to make open so
             <!-- Add logo, search bar and buttons -->
 
                 <img class="npm-logo" src="/images/npm-logo.png" alt="npm logo" />  
-
-                <img class="magnifying-glass" src="/images/magnifying-glass.png" alt="magnifying glass" />
-
+            
                 <form class="search-container"> 
-                    <input class="input" type="text" placeholder="Search" name="Search packages">
-                    <button type="submit"> Search </button> 
+                    <input class="input" type="text" placeholder="Search packages" name="Search packages">
+                    <button id="search-button" type="submit"> Search </button> 
                 </form>
 
                 <a href="#" id="joinButton"> Join </a>
@@ -69,7 +67,7 @@ auditing features built into the npm client, a zero-friction way to make open so
 
             <div class="buttons">
                 <a href="#" id="plansButton"> See plans </a>
-                <a href="#"> Join for free </a>
+                <a href="#" id="join-for-free"> Join for free </a>
             </div>
 
         </section>
@@ -115,11 +113,12 @@ auditing features built into the npm client, a zero-friction way to make open so
                 <h2> npm audit </h2>
                 <h3> Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</h3>
             </div>
-            
-            <button type="button">Create an Org</button>
 
         </section>
 
+        <div class="wrapper">
+            <button id="footer-button" type="button">Create an Org</button>
+        </div>
     </body>
 
 </html>
